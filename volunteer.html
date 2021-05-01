@@ -39,12 +39,18 @@ if (!isset($_SESSION['loggedin'])) {
       </div>
     
     <h1>Volunteer Dashboard</h1>
-    <h2>Jobs Available</h2>
-    <div>
-        <form method="POST" action="volunteer.php">
-            <p>Job Name: </p>
+    <h2>Jobs</h2>
+    <div> 
+        <form method="POST" action="list.php">
+            <p>Web Development</p>
+            <input type="radio" name="WebDev" id="WebDev"></p>
+            <p>Gadgeteers</p>
+            <input type="radio" name="Gadget" id="Gadget"></p>
+            <p>Data Analysis</p>
+            <input type="radio" name="Date" id="Data"></p>
         </form>
     </div>
+
     <h2>Hours</h2>
     <div>
         <form method="POST" action="hours.php">
