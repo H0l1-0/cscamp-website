@@ -38,7 +38,7 @@
         echo "</table>" ;
         echo "<p>Total rows returned: ".@mysqli_num_rows($q1Result)."</p>"; 
     }
-    else if($gadget){
+    if($gadget){
         $Row = @mysqli_fetch_row($q2Result) ;
         do {
             echo "<tr>" ;
@@ -51,7 +51,9 @@
         echo "</table>" ;
         echo "<p>Total rows returned: ".@mysqli_num_rows($q2Result)."</p>" ;
         
-    }else($data){
+    }
+
+    if($data){
         
         do {
             echo "<tr>" ;
